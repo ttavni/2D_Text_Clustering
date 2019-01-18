@@ -10,7 +10,7 @@ corpus = [item for sublist in [corpus[col].tolist() for col in corpus.columns] f
 
 tf = text_features(corpus)
 data = Mapper(tf.values, corpus)
-mapping = automatic_labelling(data)
+mapping = automatic_labelling(pd.DataFrame(data))
 
 Visualiser(mapping,folder='christmas')
 

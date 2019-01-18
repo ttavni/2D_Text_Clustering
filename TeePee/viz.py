@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import bs4
 
-def Visualiser(mapping, folder, value='0.5'):
+def Visualiser(mapping, folder, value='0.1'):
 
 	mapping['value'] = value
 	mapping = mapping[mapping.labels != -1]
