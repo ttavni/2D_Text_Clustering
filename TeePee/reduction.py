@@ -18,4 +18,4 @@ def Mapper(X, corpus,min_dist = 0.0, n_components = 2, n_neighbors=5):
 	X_coords, y_coords = u[:, 0], u[:, 1]
 	data = {'X':X_coords,'Y':y_coords,'labels':labels,'corpus':corpus}
 
-	return data
+	return pd.DataFrame(data)
