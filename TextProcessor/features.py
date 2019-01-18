@@ -7,7 +7,7 @@ from sklearn.decomposition import TruncatedSVD
 
 # NLP Tokenization & Cleaning
 from nltk.tokenize import word_tokenize
-from TeePee.cleaning import clean_text
+from TextProcessor.cleaning import clean_text
 
 # Data Handling
 import numpy as np
