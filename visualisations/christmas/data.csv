@@ -1,0 +1,177 @@
+,X,Y,labels,corpus,cluster_name,value
+0,-2.0183442,-0.5900575,4,Dads complain at Christmas time ,christmas millennials | real | christmas time | day | santa,0.5
+1,-2.2006087,-2.0452623,3,Everyone hates tumeric lattes ,elton john | christmas | nativity plays | mothers | people,0.5
+2,1.0805284,-2.308251,2,"According to the World Health Organisation, bees are so last year. ",christmas | people | last year | unimaginative gifts | years,0.5
+4,-2.0661387,-0.5645815,4,Passive aggression goes up by 43% at Christmas time. ,christmas millennials | real | christmas time | day | santa,0.5
+6,1.0965543,-1.9558178,2,Burritos are the most common dish eaten by millenials at Christmas ,christmas | people | last year | unimaginative gifts | years,0.5
+7,1.1829998,-1.8450755,2,30% of people are allergic to Christmas pudding,christmas | people | last year | unimaginative gifts | years,0.5
+8,-1.0051366,-2.2899811,6,We need a Christmas themed stunt. ,christmas | world | choir | new christmas fable | people,0.5
+9,-2.158583,-2.02492,3,45% of mothers hate nativity plays ,elton john | christmas | nativity plays | mothers | people,0.5
+10,3.7375567,-3.624747,1,Christmas is fundamentally misogynist,christmas | emotional blackmail | bad | santa | time,0.5
+11,2.5356698,-0.43612996,13,People spend more money when they see something sad that is then happy again,people | something new | christmas | open | london,0.5
+12,-1.955927,-0.67488885,4,Sometimes negativity brings us down at Christmas,christmas millennials | real | christmas time | day | santa,0.5
+13,3.284041,-3.2329166,1,Wrapping paper is bad for environment ,christmas | emotional blackmail | bad | santa | time,0.5
+14,2.5214288,-0.35097966,13,CEOs seem to always be cold when on Skype,people | something new | christmas | open | london,0.5
+15,0.17635281,-0.48942348,8,"At Christmas, people forget about old people. ",people | stand | brexit | christmas | palm oil,0.5
+16,-1.1844215,-1.8091847,5,Only 1 in 10 will sing Lily Allen this Christmas. ,christmas | something new | something fresh | hungry | true meaning,0.5
+19,-0.1230202,0.409069,9,We need to make mums buy food from our brand. ,food | mums | everyone | homeless | lovable,0.5
+20,2.6279345,-0.26795593,13,People want something new to be angry about. ,people | something new | christmas | open | london,0.5
+21,-1.91469,-0.6733063,4,Millennials find us particularly boring at Christmas. ,christmas millennials | real | christmas time | day | santa,0.5
+22,1.3953128,0.9066627,15,We need mums to love us again. ,love | everyone | nothing | mums,0.5
+24,1.091387,-1.8657012,2,Dads are becoming more concerned about the state of Christmas dinner ,christmas | people | last year | unimaginative gifts | years,0.5
+25,3.5887563,-3.5348542,1,Mrs Santa Claus is an angry feminist ,christmas | emotional blackmail | bad | santa | time,0.5
+26,-0.0633969,-0.40682653,8,"When people think of Christmas, they don't usually think of refugees. ",people | stand | brexit | christmas | palm oil,0.5
+27,1.2157559,-1.9819406,2,These days all children want are unimaginative gifts,christmas | people | last year | unimaginative gifts | years,0.5
+28,-1.5428417,-0.23072922,4,Parents aren't bonding with their children at Christmas,christmas millennials | real | christmas time | day | santa,0.5
+29,-0.7449549,-3.3487558,6,The client wants something award winning. ,christmas | world | choir | new christmas fable | people,0.5
+30,2.9345312,-3.1801395,1,"According to trend reports, Christmas is a time for giving. ",christmas | emotional blackmail | bad | santa | time,0.5
+31,2.5426292,-3.1412244,1,"According to recent reports, family time. ",christmas | emotional blackmail | bad | santa | time,0.5
+32,3.653688,-3.5832977,1,Christmas is significant. ,christmas | emotional blackmail | bad | santa | time,0.5
+33,-0.40419778,-4.215095,6,People love carols. ,christmas | world | choir | new christmas fable | people,0.5
+34,-1.930578,-0.6720552,4,Hot air ballooning is one of the worst ways to travel at Christmas ,christmas millennials | real | christmas time | day | santa,0.5
+35,3.1072176,-3.6886036,1,Pollution is a huge problem in big cities. ,christmas | emotional blackmail | bad | santa | time,0.5
+36,3.4879394,-3.3526788,1,Donald Trump is a bit wild. ,christmas | emotional blackmail | bad | santa | time,0.5
+37,0.7031143,-2.9041958,2,1/3 of kids have never heard of Mariah Carey ,christmas | people | last year | unimaginative gifts | years,0.5
+38,0.90853345,-2.105437,2,Many Christmas trees are just thrown away after Christmas. ,christmas | people | last year | unimaginative gifts | years,0.5
+39,3.1693664,-3.3391805,1,Christmas is the perfect time for emotional blackmail. ,christmas | emotional blackmail | bad | santa | time,0.5
+40,-0.7251343,-1.5725436,5,Grandfather's want something new to complain about this Christmas ,christmas | something new | something fresh | hungry | true meaning,0.5
+41,3.1838458,-3.6158676,1,30% of turkey is turkey. ,christmas | emotional blackmail | bad | santa | time,0.5
+42,3.6930482,-3.6187403,1,Emotional blackmail is powerful ,christmas | emotional blackmail | bad | santa | time,0.5
+43,-1.0924119,1.5106424,11,Let's promote the true meaning of Christmas ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+44,2.7209346,-3.689608,1,Blood donations decline in December. ,christmas | emotional blackmail | bad | santa | time,0.5
+45,3.2799098,-3.1146166,1,No one knows that Santa is very body positive. ,christmas | emotional blackmail | bad | santa | time,0.5
+47,2.9946456,-3.495489,1,The tube during the festive period is particularly dire. ,christmas | emotional blackmail | bad | santa | time,0.5
+48,2.981156,-3.3148038,1,Client feedback was particularly bad this year. ,christmas | emotional blackmail | bad | santa | time,0.5
+49,1.1542904,-1.9403822,2,"20% of people are wearing slippers, right now. ",christmas | people | last year | unimaginative gifts | years,0.5
+51,-2.033633,-1.9484673,3,"Elton John. Just, Elton John. ",elton john | christmas | nativity plays | mothers | people,0.5
+52,0.64280504,-2.917201,2,We've had a lot of briefs this year that went nowhere. ,christmas | people | last year | unimaginative gifts | years,0.5
+53,0.6458527,-2.8419867,2,None of our campaigns went viral this year. ,christmas | people | last year | unimaginative gifts | years,0.5
+55,3.6942382,-3.5914543,1,Santa is over. ,christmas | emotional blackmail | bad | santa | time,0.5
+56,-0.57095313,-3.7499766,6,Let's make people love us ,christmas | world | choir | new christmas fable | people,0.5
+57,2.096917,0.05013787,13,The client wants to make a stand about something but can't say it explicitly. ,people | something new | christmas | open | london,0.5
+58,1.7236589,0.6640172,14,Increase everything,somebody | christmas | good ideas | everything,0.5
+59,-1.3625783,-0.2665849,4,1/3 kids learn Santa isn't real at school,christmas millennials | real | christmas time | day | santa,0.5
+60,2.9589548,-3.254772,1,The agency Christmas party budget is going towards this. ,christmas | emotional blackmail | bad | santa | time,0.5
+61,0.958245,-2.614326,2,People have been giving gifts the same way for hundreds of years ,christmas | people | last year | unimaginative gifts | years,0.5
+62,3.5516176,-3.5675707,1,Dreaming of a White Christmas is racist. ,christmas | emotional blackmail | bad | santa | time,0.5
+64,-0.2749176,-1.5094876,5,Gen Z feel a disconnection to the brand ,christmas | something new | something fresh | hungry | true meaning,0.5
+65,0.7561969,0.6674521,12,We're here to make Christmas dinner easier ,everyone | moisturise | people | elton john | energy,0.5
+66,1.0333687,-2.6581316,2,Gingerbread man sales have been steadily declining for years ,christmas | people | last year | unimaginative gifts | years,0.5
+67,3.4302034,-3.3276248,1,"Happy is good, but sad is better ",christmas | emotional blackmail | bad | santa | time,0.5
+68,-1.0628427,-2.966655,6,We'll open a gift wrapping university ,christmas | world | choir | new christmas fable | people,0.5
+69,-0.97208786,-3.0280573,6,We'll open a tumeric latte store ,christmas | world | choir | new christmas fable | people,0.5
+70,-0.528484,-4.1211605,6,We'll create the world's longest bee ,christmas | world | choir | new christmas fable | people,0.5
+71,-0.13703692,-3.0049782,6,We'll open the best snow shop there ever was  ,christmas | world | choir | new christmas fable | people,0.5
+72,-0.72343117,-3.4249337,6,We'll teach a children's choir every Mariah Carey song EXCEPT 'All I want for Christmas' ,christmas | world | choir | new christmas fable | people,0.5
+73,-1.5534363,-0.48910677,4,We'll search for your long lost hotmail address ,christmas millennials | real | christmas time | day | santa,0.5
+74,-6.733209,-7.072465,0,We'll turn pensions into burritos this Christmas. ,space | mistletoe | bad client feedback | paper | christmas,0.5
+75,-2.364399,-2.328165,3,We'll create trendy sick masks ,elton john | christmas | nativity plays | mothers | people,0.5
+76,-6.5259757,-6.899407,0,We'll launch mistletoe into space,space | mistletoe | bad client feedback | paper | christmas,0.5
+77,-0.45903584,-3.3503783,6,We'll film an unrealistic school nativity play to the tune of a song your mum likes,christmas | world | choir | new christmas fable | people,0.5
+78,-6.740847,-7.065343,0,We'll turn hymns into a feminist protest,space | mistletoe | bad client feedback | paper | christmas,0.5
+79,-0.33755577,-2.9318633,6,We'll watch an old guy spy on a little girl from the moon,christmas | world | choir | new christmas fable | people,0.5
+80,-6.616092,-7.1008286,0,We'll turn bad client feedback into a Christmas cracker,space | mistletoe | bad client feedback | paper | christmas,0.5
+81,-6.7518125,-7.1225405,0,We'll turn wrapping paper into the theme of to Bohemian Rhapsody ,space | mistletoe | bad client feedback | paper | christmas,0.5
+82,-2.0919003,-1.5840926,3,We'll defrost our agency's CEO on a skype call ,elton john | christmas | nativity plays | mothers | people,0.5
+83,-2.280739,-2.2101789,3,We'll make grandma's knit naughty things ,elton john | christmas | nativity plays | mothers | people,0.5
+85,-0.81064236,-2.535299,6,We'll create a John Lewis advert without the budget ,christmas | world | choir | new christmas fable | people,0.5
+86,-1.1156206,-2.5549872,6,We'll follow a curious group of critters through the forest ,christmas | world | choir | new christmas fable | people,0.5
+88,0.11375721,-0.48443136,8,We'll take a stand against palm oil to make people care about orangutan bedrooms ,people | stand | brexit | christmas | palm oil,0.5
+89,-1.6325992,-0.64396894,4,We'll draw faces on cardboard boxes and send them around the world ,christmas millennials | real | christmas time | day | santa,0.5
+90,-0.69651324,-2.4356227,6,We'll give a carrot a human name and make it fight a bloody parsnip,christmas | world | choir | new christmas fable | people,0.5
+91,-0.7892534,-2.7211804,6,We'll repackage shit gifts with a witty tagline and call it a Christmas miracle ,christmas | world | choir | new christmas fable | people,0.5
+92,-6.968907,-6.8043222,0,We'll turn paper clips into tinsel ,space | mistletoe | bad client feedback | paper | christmas,0.5
+93,-7.0174284,-6.7523923,0,We'll turn Christmas trees upside down ,space | mistletoe | bad client feedback | paper | christmas,0.5
+95,-6.708421,-7.0195174,0,We'll turn people's favourite emojis into gifts ,space | mistletoe | bad client feedback | paper | christmas,0.5
+96,-1.1681905,-2.923761,6,We'll write a new Christmas fable ,christmas | world | choir | new christmas fable | people,0.5
+97,-0.9193843,-2.5181122,6,We'll make the whole agency join a choir,christmas | world | choir | new christmas fable | people,0.5
+98,2.4488363,-0.28773206,13,We'll make inclusive cards that include everyone so that they feel wanted this Christmas,people | something new | christmas | open | london,0.5
+99,-0.6012257,-1.6822904,5,We'll invent an A.I to think up our Christmas campaign,christmas | something new | something fresh | hungry | true meaning,0.5
+100,-2.301174,-2.2706954,3,We'll make edible Christmas cards ,elton john | christmas | nativity plays | mothers | people,0.5
+101,-0.2000722,0.09363726,8,We'll make the the agency sing carols to other agencies ,people | stand | brexit | christmas | palm oil,0.5
+102,-6.3773184,-6.9012656,0,We'll send a rocket made of mistletoe into space,space | mistletoe | bad client feedback | paper | christmas,0.5
+103,-6.983198,-6.785842,0,We'll turn speed bumps into tiny Santa Clause,space | mistletoe | bad client feedback | paper | christmas,0.5
+104,-2.2475076,-2.2555141,3,We'll make something Trump-themed ,elton john | christmas | nativity plays | mothers | people,0.5
+105,-2.0047996,-1.953983,3,We'll generate personalised playlists based on people's wrapping habits ,elton john | christmas | nativity plays | mothers | people,0.5
+106,-1.0079013,-2.9574227,6,We'll invent a talking Christmas tree ,christmas | world | choir | new christmas fable | people,0.5
+107,-2.3113196,-1.7781497,3,We'll push our feminist agenda ,elton john | christmas | nativity plays | mothers | people,0.5
+108,-1.2577716,-1.9959519,3,We'll create a Christmas-themed hashtag that will go viral ,elton john | christmas | nativity plays | mothers | people,0.5
+109,-0.3732045,-1.8490051,5,We'll cook a turkey big enough to feed an entire village ,christmas | something new | something fresh | hungry | true meaning,0.5
+110,0.057740416,-0.21100433,8,We'll encourage people to donate blood ,people | stand | brexit | christmas | palm oil,0.5
+111,-1.3389438,-2.6289704,6,We'll introduce a new deer species into the wild ,christmas | world | choir | new christmas fable | people,0.5
+112,-0.3259499,0.5901778,9,We'll give everyone to donate their shit gifts to the homeless ,food | mums | everyone | homeless | lovable,0.5
+113,0.5090121,-2.9941096,2,We'll announce that Santa has turned vegan ,christmas | people | last year | unimaginative gifts | years,0.5
+114,-0.47599792,-2.496846,6,We'll release a remix of Michael Buble and Little Minx and call it Michael Minx ,christmas | world | choir | new christmas fable | people,0.5
+115,-1.8056349,-0.7802285,4,We'll surprise people on the tube the day before Christmas ,christmas millennials | real | christmas time | day | santa,0.5
+116,-6.9393334,-6.8438616,0,We'll turn client feedback into hilarious Christmas songs ,space | mistletoe | bad client feedback | paper | christmas,0.5
+117,-0.89454937,-3.4219165,6,We'll make a statement about gay rights ,christmas | world | choir | new christmas fable | people,0.5
+118,-0.8892249,-2.821378,6,We'll unplug the Oxford Street Christmas lights ,christmas | world | choir | new christmas fable | people,0.5
+119,-1.5175265,-0.4076588,4,We'll throw all our budget at Elton John ,christmas millennials | real | christmas time | day | santa,0.5
+120,-1.8069087,-2.010342,3,We'll sell Christmas puddings made from old agency briefs,elton john | christmas | nativity plays | mothers | people,0.5
+121,-0.71225154,-3.3280158,6,We'll set a record for something Christmas-themed ,christmas | world | choir | new christmas fable | people,0.5
+122,-1.2730895,-2.70775,6,We'll introduce a new Christmas flavoured cheese,christmas | world | choir | new christmas fable | people,0.5
+123,-2.388517,-2.4745166,3,We'll re-introduce Santa Claus as gender fluid ,elton john | christmas | nativity plays | mothers | people,0.5
+124,-0.5128398,-3.579691,6,We'll film two teddy bears coming home for Christmas ,christmas | world | choir | new christmas fable | people,0.5
+125,-0.7944615,-3.2850497,6,We'll film a Polish guy learning English ,christmas | world | choir | new christmas fable | people,0.5
+126,-2.0304167,-2.3188512,3,We'll introduce festive versions of already festive things,elton john | christmas | nativity plays | mothers | people,0.5
+127,-6.543074,-7.1291785,0,We'll re-create a heart-warming story from World War One ,space | mistletoe | bad client feedback | paper | christmas,0.5
+128,-0.53268456,-3.7013602,6,We'll film women doing the Walk of Shame ,christmas | world | choir | new christmas fable | people,0.5
+129,0.085871,-0.26898977,8,We'll revolutionise how people give gifts ,people | stand | brexit | christmas | palm oil,0.5
+130,-0.2650701,-2.9140766,6,We'll follow a snowman as he makes the long journey home ,christmas | world | choir | new christmas fable | people,0.5
+131,-0.89329344,-1.3837016,5,We'll do something fresh and new about the 12 days of Christmas ,christmas | something new | something fresh | hungry | true meaning,0.5
+132,-6.6742373,-7.081645,0,We'll turn our product into an Xmas bow ,space | mistletoe | bad client feedback | paper | christmas,0.5
+133,-1.6773734,-0.9247816,4,"We'll drive a giant, lit-up truck around the country ",christmas millennials | real | christmas time | day | santa,0.5
+134,-0.50062996,-4.0834455,6,We'll bake the world's biggest gingerbread man,christmas | world | choir | new christmas fable | people,0.5
+135,-0.50856006,-4.0893583,6,We'll create the world's most soppy love story ,christmas | world | choir | new christmas fable | people,0.5
+136,0.611198,1.4174842,12,to encourage dads to love ,everyone | moisturise | people | elton john | energy,0.5
+137,0.096654035,-1.7626035,5,to prove there's no such thing as a free Christmas lunch.,christmas | something new | something fresh | hungry | true meaning,0.5
+138,-0.8706502,-1.4387388,5, to remind little girls about the true meaning of christmas. ,christmas | something new | something fresh | hungry | true meaning,0.5
+140,3.399067,-0.7746448,7,because no one really likes that song ,everyone | funny | burritos | kinda | nothing,0.5
+141,2.3468277,-0.25336003,13,and make it Christmas-y. ,people | something new | christmas | open | london,0.5
+142,3.3438253,-0.7034042,7,because everyone loves burritos. ,everyone | funny | burritos | kinda | nothing,0.5
+146,-0.9462136,0.97716814,10,to denounce the Christmas patriarchy. ,christmas break | turkey | image | word hunger | grandma,0.5
+147,0.37126544,-0.4213624,8,to make a stand about Brexit. ,people | stand | brexit | christmas | palm oil,0.5
+150,2.713493,-0.6285589,13, to prove that London is open this Christmas.,people | something new | christmas | open | london,0.5
+151,1.4581171,0.84292257,15, to prove love.  ,love | everyone | nothing | mums,0.5
+152,0.629448,1.4584507,12, to enourage millenial snowflakes to care. ,everyone | moisturise | people | elton john | energy,0.5
+153,-0.9088704,1.0051792,10, to protest grandma's turkey ,christmas break | turkey | image | word hunger | grandma,0.5
+154,-1.111205,-0.27458233,4,to find out John Lewis isn't real. ,christmas millennials | real | christmas time | day | santa,0.5
+155,3.5587177,-3.5345092,1,to prove Elton John is an illusion. ,christmas | emotional blackmail | bad | santa | time,0.5
+156,2.9709451,-0.6383162,7,because nothing goes more virla than a banned ad. ,everyone | funny | burritos | kinda | nothing,0.5
+157,-0.10909285,0.39891228,9,to make our mega corporate client look lovable. ,food | mums | everyone | homeless | lovable,0.5
+158,3.316384,-3.188474,1,because our client is a supermarket. ,christmas | emotional blackmail | bad | santa | time,0.5
+159,-1.0616148,1.5155764,11,to promote the spirit of Christmas ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+160,-0.82973135,1.2601207,10,to protest working over the Christmas break. ,christmas break | turkey | image | word hunger | grandma,0.5
+161,-1.1349514,1.4392945,11,to protest the existence of mince pies. ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+162,1.9401269,0.3839175,14,to show we can do better. ,somebody | christmas | good ideas | everything,0.5
+163,3.4405951,-0.797554,7,because tech! ,everyone | funny | burritos | kinda | nothing,0.5
+165,-1.0930816,-0.2738523,4,so we won't lose the client. ,christmas millennials | real | christmas time | day | santa,0.5
+166,1.5161005,0.76154566,15,to prove everyone deserves love ,love | everyone | nothing | mums,0.5
+167,1.5970762,0.75402874,15,to prove absolutely nothing. ,love | everyone | nothing | mums,0.5
+168,-1.304041,0.6879384,10,to solve word hunger at Christmas. ,christmas break | turkey | image | word hunger | grandma,0.5
+170,0.71712446,1.0486913,12,to encourage robots to love harder. ,everyone | moisturise | people | elton john | energy,0.5
+172,3.4538188,-0.80915475,7,because it's funny. Kinda. ,everyone | funny | burritos | kinda | nothing,0.5
+175,-1.3132803,0.76114994,10,to push our feminist agenda at Christmas ,christmas break | turkey | image | word hunger | grandma,0.5
+176,-1.0903395,1.5162437,11,to remind them of the true meaning of Christmas ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+177,-1.1030481,1.5618919,11,to the theme of Bohemian Rhapsody ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+178,0.63032717,1.4755937,12,to Elton John ,everyone | moisturise | people | elton john | energy,0.5
+179,-1.091466,1.5666769,11,to the tune of Your Song. ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+180,-1.1361791,-1.7709595,5,so no one will go hungry this Christmas ,christmas | something new | something fresh | hungry | true meaning,0.5
+181,-0.039165083,0.50932604,9,to make your Auntie buy Quality Street. ,food | mums | everyone | homeless | lovable,0.5
+183,0.6349742,1.4628421,12,to encourage everyone to moisturise. ,everyone | moisturise | people | elton john | energy,0.5
+184,-1.1237103,0.89477473,10,to improve the agency's image. And Christmas. ,christmas break | turkey | image | word hunger | grandma,0.5
+185,-1.1521188,0.8802601,10,to push the Christmas gay agenda. ,christmas break | turkey | image | word hunger | grandma,0.5
+186,0.5315285,1.3040411,12,to encourage people to save energy. ,everyone | moisturise | people | elton john | energy,0.5
+187,2.251535,-0.15689677,13,to remind people that our client still exists. ,people | something new | christmas | open | london,0.5
+188,1.6638712,0.1941269,14,because we're all out of good ideas. ,somebody | christmas | good ideas | everything,0.5
+189,-0.89960885,1.0424381,10,to save the turkey. ,christmas break | turkey | image | word hunger | grandma,0.5
+190,3.3252535,-0.70145535,7,because who doesn't like that? ,everyone | funny | burritos | kinda | nothing,0.5
+191,3.4843771,-0.8464032,7,because it's 2018. ,everyone | funny | burritos | kinda | nothing,0.5
+193,0.26869646,-0.52708316,8,to make people forget Brexit for a month. ,people | stand | brexit | christmas | palm oil,0.5
+194,2.5771065,-0.38484302,13,to just be more festive. ,people | something new | christmas | open | london,0.5
+195,2.5973532,-0.19542675,13,to prove we have a heart. ,people | something new | christmas | open | london,0.5
+197,0.6953439,0.95434594,12,to encourage more Christmas miracles. ,everyone | moisturise | people | elton john | energy,0.5
+198,1.8892393,0.30010825,14,because we all need somebody to love this Christmas. ,somebody | christmas | good ideas | everything,0.5
+199,-0.84752643,-1.5258424,5,for something fresh and new,christmas | something new | something fresh | hungry | true meaning,0.5
+202,-1.0376827,1.3401835,11,to promote world peace ,christmas | true meaning | theme | bohemian rhapsody | existence,0.5
+203,-0.048138253,0.5196058,9,to make your mums cry ,food | mums | everyone | homeless | lovable,0.5

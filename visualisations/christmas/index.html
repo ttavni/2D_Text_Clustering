@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8"/>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet"/>
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<style>
+
+body {
+
+  background: #1b1b1b;
+}
+
+ svg {
+    background: #1b1b1b;
+    transform: translate(-1400px, -100px);
+    z-index: -1;
+    position: fixed;
+  } 
+
+.path_placeholder {
+    stroke-width: 30px;
+  }
+
+body {
+   font-size: 12px;
+   font-weight: bold;
+   background: #1b1b1b;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.0;
+}
+
+.nodes circle {
+  stroke-width: 1.5px;
+}
+
+path {
+  fill-opacity: .1;
+  stroke-opacity: 0.0;
+}
+
+circle {
+
+  fill-opacity: .5;
+}
+
+text.label {
+font-family: 'Montserrat';
+}
+
+#titlePlaceholder {
+
+  font-family: 'Armata';
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  text-decoration: underline;
+
+}
+
+#articlePlaceholder {
+
+  font-family: 'Armata';
+  color: white;
+  width: 30%;
+  position: fixed;
+  font-size: 14px;
+  text-align: center;
+  transform: translate(800px, 50px);
+
+}
+
+             
+    </style>
+</head>
+<body>
+<div class="container">
+<div id="titlePlaceholder"></div>
+<div id="articlePlaceholder"></div>
+<svg height="2600" width="4660"></svg>
+</div>
+</body>
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+
+var objects;
+var svg;
+var highlightDummy; 
+
+var margin = { top: 20, right: 10, bottom: 20, left: 20 },
+    outerWidth = 2300,
+    outerHeight = 3500,
+    width = outerWidth - margin.left - margin.right,
+    height = outerHeight - margin.top - margin.bottom;
+
+
+var x = d3.scaleLinear()
+    .range([0, width]).nice();
+
+var y = d3.scaleLinear()
+    .range([height, 0]).nice();
+
+var xCat = "X",
+    yCat = "Y",
+    xVar = "X",
+    yVar = "Y",
+    rCat = "Protein (g)",
+    colorCat = "labels";
+
+  color = d3.scaleOrdinal()
+    .domain(function(d) { return d.labels; })
+    .range(["rgb(6,150,104)", "rgb(52,222,187)", "rgb(7,77,101)", "rgb(141,235,113)", "rgb(27,81,29)", "rgb(145,206,244)", "rgb(27,77,171)", "rgb(218,115,248)", "rgb(104,55,79)", "rgb(223,187,227)", "rgb(116,22,142)", "rgb(202,219,165)", "rgb(122,48,3)", "rgb(234,214,36)", "rgb(32,142,183)", "rgb(52,245,14)", "rgb(183,13,97)", "rgb(101,161,14)", "rgb(192,0,24)", "rgb(246,166,121)", "rgb(124,136,105)", "rgb(255,107,151)", "rgb(63,22,249)", "rgb(101,139,251)", "rgb(166,116,149)", "rgb(242,49,252)"]);
+
+var svg = d3.select('svg').attr("class", "scatter"),
+    valueline = d3.line()
+      .x(function(d) { return d[0]; })
+      .y(function(d) { return d[1]; })
+      .curve(d3.curveCatmullRomClosed),
+    paths,
+    groups,
+    groupIds,
+    scaleFactor = 1.2,
+    polygon,
+    centroid,
+    node,
+    link,
+    curveTypes = ['curveBasisClosed', 'curveCardinalClosed', 'curveCatmullRomClosed', 'curveLinearClosed'],
+    simulation = d3.forceSimulation()
+      .force('link', d3.forceLink().id(function(d) { return d.labels; }))
+      .force('charge', d3.forceManyBody())
+      .force('center', d3.forceCenter(width / 2, height / 2));
+
+var g = svg.append("g").classed("objects", true);
+
+var zoom = d3.zoom().on("zoom", function () { 
+
+  //console.log(d3.event.transform);
+  
+        g.attr("transform", d3.event.transform);
+    });
+
+////mouse zoom & position view in optimal position
+
+svg.call(zoom).call(zoom.transform, d3.zoomIdentity.translate(1678.7557542235716, 479.2031492796041).scale(0.0631094560997933));
+
+
+d3.csv("data.csv", function(data) {
+  data.forEach(function(d) {
+    d.X = +d.X;
+    d.Y = +d.Y;
+    d.labels = +d.labels;
+    d.highlight = d.highlight;
+    d.href = d.href;
+    d.cluster_name = d.cluster_name;
+    d.description = d.description;
+    d.corpus = d.corpus;
+    d.URLs = d.URLs;
+  });
+
+  var scatterData = data;
+
+  var xMax = d3.max(data, function(d) { return d[xCat]; }) * 0.25,
+      xMin = d3.min(data, function(d) { return d[xCat]; }),
+      xMin = xMin > 0 ? 0 : xMin,
+      yMax = d3.max(data, function(d) { return d[yCat]; }) * 0.1,
+      yMin = d3.min(data, function(d) { return d[yCat]; }),
+      yMin = yMin > 0 ? 0 : yMin;
+
+  x.domain([xMin, xMax]);
+  y.domain([yMin, yMax]);
+
+  groups = svg.append('g').attr('class', 'groups');
+
+  var xVar = "X",
+      yVar = "Y";
+
+
+ // count members of each group. Groups with less
+  // than 3 member will not be considered (creating
+  // a convex hull need 3 points at least)
+  groupIds = d3.set(data.map(function(n) { return +n.labels; }))
+    .values()
+    .map( function(groupId) {
+      return { 
+        groupId : groupId,
+        count : data.filter(function(n) { return +n.labels == groupId; }).length
+      };
+    })
+    .filter( function(group) { return group.count > 2;})
+    .map( function(group) { return group.groupId; });
+
+
+  function zoom() {
+
+   d3.selectAll(".circles")
+        .attr("transform", transform);
+  }
+
+  function transform(d) {
+    return "translate(" + x(d[xCat]) + "," + y(d[yCat]) + ")";
+  }
+
+
+  paths = g.selectAll('.path_placeholder')
+    .data(groupIds, function(d) { return +d; })
+    .enter()
+    .append('g')
+    .attr('class', 'path_placeholder')
+    .append('path')
+    .attr("id", function(d) { return "path_" + d;})
+    .attr('stroke', function(d) { return color(d); })
+    .attr('fill', function(d) { return color(d); });
+
+
+    node = g.append('g')
+      .attr('class', 'nodes')
+    .selectAll('circle')
+    .data(data)
+    .enter()
+
+  var circles = node.append('circle')
+       .attr("class", "circles")
+       .attr("r", function(d) { return d.value * 100.5;})
+      .attr('fill', function(d) { return color(d.labels); })
+      .attr("id", function(d) {
+                  return "ID_" + d.labels;
+                    });
+
+
+      circles
+        .attr('cx', function(d) { return x(d.X); })
+        .attr('cy', function(d) { return y(d.Y); });
+
+
+  paths.on("mouseover",  function(d) {
+
+    if (highlightDummy != 1) {
+
+    var cluster = d;  
+
+    g.selectAll(".path_placeholder").select("path").style("visibility", "visible")
+    .attr("opacity", function(d) {return ((d == cluster ? 1.0 : 0.0)) });
+
+    }
+
+    });
+
+  simulation
+      .nodes(data)
+      .on('tick', ticked);
+
+ paths.on("click",  function(d) {
+
+  //scrolls + zooms on the cluster when clicked
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelector(this).scrollIntoView({ 
+    behavior: 'smooth',
+    block: 'center'
+  });
+});
+
+  currentZoom = 1.0;
+
+    $('html, body').animate({
+      scrollTop: $($(this)).offset().top - 300,
+      scrollRight: $($(this)).offset().right - 15,
+      zoom: 1.0
+    }, 3000);
+
+   highlightDummy = 1;
+
+   var cluster = d;
+
+   d3.selectAll(".circles").transition().duration(500).attr("r", function(d) {return ((d.labels == cluster ?  d.value * 200 : 0.0)) });
+
+   //d3.selectAll(".circles").on("click", function(d) { return window.open(d.URLs); });
+
+    $('#titlePlaceholder').fadeIn(700);
+    $('#articlePlaceholder').fadeIn(700);
+
+  //filter object on key value
+
+  const filterTasks = (taskArray, obj) => taskArray.filter( task => Object.keys(task).some( key => obj[key] && obj[key]==task[key]));
+
+  var filteredJSON =  filterTasks(scatterData, {labels:d});
+
+  var title = filteredJSON[0]['cluster_name']
+
+  document.querySelector("#titlePlaceholder").innerHTML = title;
+
+    $("titlePlaceholder").position({
+    my:        "left top",
+    at:        "left bottom",
+    of:        $(".ID_" + cluster), // or $("#otherdiv")
+    collision: "fit"
+});
+
+
+  d3.selectAll(".circles").on("mouseover", function(d) { 
+
+    document.querySelector("#articlePlaceholder").innerHTML = d.corpus;
+
+  });
+
+    });
+
+
+ document.body.onkeyup = function(e){
+    if(e.keyCode == 27){
+
+        d3.selectAll(".circles").transition().duration(500).attr("r", function(d) { return d.value * 100.5;});
+        highlightDummy = 0;
+
+          $('#titlePlaceholder').fadeOut(1000);
+           $('#articlePlaceholder').fadeOut(1000);
+
+          //  $('html, body').animate({
+     // scrollTop: $($(this)).offset().top + 10,
+    //  scrollRight: $($(this)).offset().right + 15,
+   //   zoom: 1.0
+  //  }, 1500);
+
+    }
+}
+
+    function ticked() {
+    
+    updateGroups();
+
+  }
+
+// select nodes of the group, retrieve its positions
+// and return the convex hull of the specified points
+// (3 points as minimum, otherwise returns null)
+
+var polygonGenerator = function(groupId) {
+  var node_coords = circles
+    .filter(function(d) { return d.labels == parseInt(groupId); })
+    .data()
+    .map(function(d) { return [d.X, d.Y]; });
+    
+  return d3.polygonHull(node_coords);
+};
+
+
+function updateGroups() {
+  groupIds.forEach(function(groupId) {
+    var path = paths.filter(function(d) { return d == parseInt(groupId);})
+      .attr('transform', 'scale(1) translate(0,0)')
+      .attr('d', function(d) {
+        polygon = polygonGenerator(d);          
+        centroid = d3.polygonCentroid(polygon);
+
+        // to scale the shape properly around its points:
+        // move the 'g' element to the centroid point, translate
+        // all the path around the center of the 'g' and then
+        // we can scale the 'g' element properly
+        return valueline(
+          polygon.map(function(point) {
+            return [  x(point[0]) - x(centroid[0]), y(point[1]) - y(centroid[1]) ];
+          })
+        );
+      });
+
+    d3.select(path.node().parentNode).attr('transform', 'translate('  + x(centroid[0]) + ',' + y(centroid[1]) + ') scale(' + scaleFactor + ')');
+  });
+}
+
+
+// drag nodes
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = x(d.X);
+  d.fy = y(d.Y);
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+// drag groups
+function group_dragstarted(groupId) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d3.select(this).select('path').style('stroke-width', 3);
+}
+
+function group_dragged(groupId) {
+  node
+    .filter(function(d) { return d.labels == groupId; })
+    .each(function(d) {
+      d.X += d3.event.dx;
+      d.Y += d3.event.dy;
+    })
+}
+
+function group_dragended(groupId) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d3.select(this).select('path').style('stroke-width', 1);
+}
+
+
+});
+
+})
+
+    </script>
