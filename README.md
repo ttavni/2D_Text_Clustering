@@ -1,6 +1,6 @@
 # Document Clustering 
 
-###### Made by Timothy Avni (tavni96) & Peter Simkin (DolphinDance)
+###### Made by Timothy Avni (tavni96) & Peter Simkin (Psimkin)
 
 We present a way to cluster text documents by stacking features from TFIDF, pretrained word embeddings and text hashing.
 
